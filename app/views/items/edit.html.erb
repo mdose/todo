@@ -1,0 +1,10 @@
+<%= form_for(@item, :html => { :class => "form-horizontal" }, url: item_path(@ite)) do |f| %>
+  <div class="form-group">
+    <div class="input-group">
+      <%= f.text_field :name, :placeholder => "Add new to-do item...", :class => "form-control", :autofocus => true %>
+      <span class="input-group-btn">
+        <button class="btn btn-primary" type="submit"><span class="glyphicon glyphicon-plus"></span></button>
+      </span>
+    </div>
+  </div>
+<% end %>
